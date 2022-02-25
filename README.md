@@ -14,6 +14,7 @@
 <p align="center">
   <a href="https://github.com/open-wc"><img alt="Built with open-wc" src="https://img.shields.io/badge/built%20with-open--wc-blue.svg"></a>
 </p>
+
 ### Developing components
 
 - Components are served with [Storybook](https://storybook.js.org/docs/react/get-started/introduction) when in development.
