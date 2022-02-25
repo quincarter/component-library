@@ -1,6 +1,7 @@
-<p align="center">
-  <img width="200" src="https://open-wc.org/hero.png"></img>
-</p>
+## This Repo utilizes [Lerna](https://github.com/lerna/lerna) for package management
+* Lerna is a workspace/monorepo tool that provides tooling for managing multiple packages with a single dependency tree, or with the option of using separate dependency trees based on your workspace configuration.
+* This Project is configured for every package in `./packages` to utilize the same `node_modules` directory. 
+* Lerna packages can be installed individually with separate npm commands i.e. `npm i -s @hello-world/scroller-wc`
 
 ## Open-wc Starter App
 
