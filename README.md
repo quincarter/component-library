@@ -1,35 +1,28 @@
+[![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
+
 ## This Repo utilizes [Lerna](https://github.com/lerna/lerna) for package management
-* Lerna is a workspace/monorepo tool that provides tooling for managing multiple packages with a single dependency tree, or with the option of using separate dependency trees based on your workspace configuration.
-* This Project is configured for every package in `./packages` to utilize the same `node_modules` directory. 
-* Lerna packages can be installed individually with separate npm commands i.e. `npm i -s @hello-world/scroller-wc`
+
+- Lerna is a workspace/monorepo tool that provides tooling for managing multiple packages with a single dependency tree, or with the option of using separate dependency trees based on your workspace configuration.
+- This Project is configured for every package in `./packages` to utilize the same `node_modules` directory.
+- Lerna packages can be installed individually with separate npm commands i.e. `npm i -s @hello-world/scroller-wc`
 
 ### Developing components
-* Components are served with [Storybook](https://storybook.js.org/docs/react/get-started/introduction) when in development.
-* Place new `stories` in the `./stories/` directory and use the others as a template to get started.
+
+- Components are served with [Storybook](https://storybook.js.org/docs/react/get-started/introduction) when in development.
+- Place new `stories` in the `./stories/` directory and use the others as a template to get started.
 
 ```bash
 npm run storybook
 ```
 
 ### Bundling Components
-* Components are bundled with [rollup](https://github.com/rollup/rollup) and running the [`lerna exec`](https://github.com/lerna/lerna/tree/main/commands/exec#readme)
 
-* This is simplified by running:
+- Components are bundled with [rollup](https://github.com/rollup/rollup) and running the [`lerna exec`](https://github.com/lerna/lerna/tree/main/commands/exec#readme) command.
+
+- This is simplified by running:
+
 ```bash
 npm run lerna:build
-```
-
-## Open-wc Starter App
-
-[![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
-
-## Quickstart
-
-To get started:
-
-```bash
-npm init @open-wc
-# requires node 10 & npm 6 or higher
 ```
 
 ## Scripts
@@ -40,6 +33,9 @@ npm init @open-wc
 - `test` runs your test suite with Web Test Runner
 - `lint` runs the linter for your project
 - `format` fixes linting and formatting errors
+- `storybook` runs storybook dev server
+- `storybook:build` builds storybook for static site hosting i.e. github pages
+- `lerna:build` bundles the packages located in the `./packages` directory as long as they have a `package.json` with the required information
 
 ## Tooling configs
 
