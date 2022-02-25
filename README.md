@@ -3,6 +3,22 @@
 * This Project is configured for every package in `./packages` to utilize the same `node_modules` directory. 
 * Lerna packages can be installed individually with separate npm commands i.e. `npm i -s @hello-world/scroller-wc`
 
+### Developing components
+* Components are served with [Storybook](https://storybook.js.org/docs/react/get-started/introduction) when in development.
+* Place new `stories` in the `./stories/` directory and use the others as a template to get started.
+
+```bash
+npm run storybook
+```
+
+### Bundling Components
+* Components are bundled with [rollup](https://github.com/rollup/rollup) and running the [`lerna exec`](https://github.com/lerna/lerna/tree/main/commands/exec#readme)
+
+* This is simplified by running:
+```bash
+npm run lerna:build
+```
+
 ## Open-wc Starter App
 
 [![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
