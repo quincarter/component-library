@@ -2,6 +2,11 @@
 
 ## This Repo utilizes [Lerna](https://github.com/lerna/lerna) for package management
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/lerna"><img alt="NPM Status" src="https://img.shields.io/npm/v/lerna.svg?style=flat"></a>
+  <a href="https://github.com/lerna/lerna/actions?query=branch%3Amain+workflow%3Aci"><img alt="CI Status" src="https://github.com/lerna/lerna/workflows/ci/badge.svg?branch=main"></a>
+</p>
+
 - Lerna is a workspace/monorepo tool that provides tooling for managing multiple packages with a single dependency tree, or with the option of using separate dependency trees based on your workspace configuration.
 - This Project is configured for every package in `./packages` to utilize the same `node_modules` directory.
 - Lerna packages can be installed individually with separate npm commands i.e. `npm i -s @hello-world/scroller-wc`
