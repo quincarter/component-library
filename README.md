@@ -1,8 +1,7 @@
 ## This Repo utilizes [Lerna](https://github.com/lerna/lerna) for package management and [open-wc](https://github.com/open-wc) for web components
 
 <p align="center">
-  <a href="https://github.com/open-wc"><img alt="Built with open-wc" src="https://img.shields.io/badge/built%20with-open--wc-blue.svg"></a>
-  <a href="https://www.npmjs.com/package/lerna">Lerna: <img alt="NPM Status" src="https://img.shields.io/npm/v/lerna.svg?style=flat"></a>
+  <a href="https://www.npmjs.com/package/lerna"><img alt="NPM Status" src="https://img.shields.io/npm/v/lerna.svg?style=flat"></a>
   <a href="https://github.com/lerna/lerna/actions?query=branch%3Amain+workflow%3Aci"><img alt="CI Status" src="https://github.com/lerna/lerna/workflows/ci/badge.svg?branch=main"></a>
 </p>
 
@@ -10,6 +9,11 @@
 - This Project is configured for every package in `./packages` to utilize the same `node_modules` directory.
 - Lerna packages can be installed individually with separate npm commands i.e. `npm i -s @hello-world/scroller-wc`
 
+## This project also uses [open-wc](https://github.com/open-wc)
+
+<p align="center">
+  <a href="https://github.com/open-wc"><img alt="Built with open-wc" src="https://img.shields.io/badge/built%20with-open--wc-blue.svg"></a>
+</p>
 ### Developing components
 
 - Components are served with [Storybook](https://storybook.js.org/docs/react/get-started/introduction) when in development.
