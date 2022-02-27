@@ -15,7 +15,7 @@
     "start:build": "web-dev-server --root-dir dist --app-index index.html --open",
     "analyze": "cem analyze --litelement",
     "start": "web-dev-server",
-    "lerna:build": "lerna exec -- rollup -c ../../rollup.config.js"
+    "lerna:build": "export ROOT_DIR=$(pwd) && lerna exec -- rollup -c $ROOT_DIR/rollup.config.js"
   },
   "dependencies": {
     "lit": "^2.0.2"
